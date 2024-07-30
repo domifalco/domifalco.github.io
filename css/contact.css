@@ -1,0 +1,67 @@
+main section form{
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    width: 80%;
+}
+main section form label{
+    margin-bottom: 10px;
+}
+main section form input, main section form select, main section form textarea{
+    margin-bottom: 16px;
+}
+.form-checkbox{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.checkbox{
+    margin: 0;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+button{
+    background-color: brown;
+    padding: 10px;
+    color: bisque;
+    font-weight: 500;
+    border-color: brown;
+    border-radius: 5px;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(50, 153, 58);
+    border-color: rgb(50, 153, 58)
+}
+.button-reset:hover{
+    background-color:rgb(78, 78, 78);
+    border-color: rgb(78, 78, 78);
+}
+
+
+@media screen and (min-width: 700px){
+main section form{
+    width: 560px;
+}
+}
+@media screen and (min-width: 450px){
+    .button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto 60px auto;
+    }
+    button{
+    width: 100px;
+    }
+}
+

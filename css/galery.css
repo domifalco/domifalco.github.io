@@ -1,0 +1,43 @@
+.instalaciones{
+    margin-bottom: 60px;
+}
+.instalaciones-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px 12px 30px 12px;
+    gap: 16px;
+}
+img.galery{
+    width: 90%;
+    margin: 0 auto;
+    transition: transform 0.2s ;
+}
+.galery:hover{
+    transform: scale(1.05);
+}
+@media screen and (min-width: 450px){
+    .instalaciones-img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 0px;
+    }
+    img.galery{
+    height: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+    .instalaciones-img{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 16px 0px;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    .instalaciones-img{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px 0px;
+    }
+}

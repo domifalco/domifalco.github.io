@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Serena</title>
+    <link rel="stylesheet" href="/TP1/css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/340ea30906.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="contact">
+
+    <header>
+        <section>
+            <div class="h1-container">    
+                <h1>Hotel La Serena</h1>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li> <a href="/TP1/index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li> <a href="/TP1/cards.html"><i class="fa-solid fa-bed"></i> Habitaciones</a></li>
+                        <li> <a href="/TP1/galery.html"><i class="fa-solid fa-image"></i> Instalaciones</a></li>
+                        <li> <a href="/TP1/contact.html"> <i class="fa-solid fa-envelope"></i> Contacto</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+
+    <main class="contact">
+        <section id="contacto">
+            <div class="h2-container">
+                <h2>¡Contactanos!</h2>
+            </div>  
+            <div class="form">
+                <form>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" name="nombre">
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" name="email">
+
+                    <label for="tel">Teléfono:</label>
+                    <input type="tel" name="tel">
+
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select name="motivo">
+                        <option value="consulta">Consulta</option>
+                        <option value="comentario">Comentario</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <label for="mensaje">Deja aquí tu mensaje:</label>
+                    <textarea name="mensaje"></textarea>
+
+                    <div class="form-checkbox">
+                         <label for="checkbox" class="checkbox">Acepto recibir novedades y promociones de La Serena por correo. </label>
+                        <input class="checkbox" type="checkbox" name="checkbox">
+                    </div>
+                    <div class="button-container">
+                        <button class button-submit="submit">Enviar</button>
+                        <button class="button-reset" type="reset">Borrar</button>
+                    </div>
+                </form>
+            </div> 
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+        <p> Creado por Dominica Falco  </p>
+         </div>
+        <div class="footer-icons">
+            <p class="icon"><i class="fa-brands fa-whatsapp"></i></p> 
+            <p class="icon"><i class="fa-brands fa-facebook"></i></p> 
+            <p class="icon"><i class="fa-brands fa-instagram"></i></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
