@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Serena</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/TP2/css/style.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +22,10 @@
             <div class="nav-container">
                 <nav>
                     <ul>
-                        <li> <a href="./index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                        <li> <a href="./cards.html"><i class="fa-solid fa-bed"></i> Habitaciones</a></li>
-                        <li> <a href="./galery.html"><i class="fa-solid fa-image"></i> Instalaciones</a></li>
-                        <li> <a href="./contact.html"> <i class="fa-solid fa-envelope"></i> Contacto</a></li>
+                        <li> <a href="/TP2/index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                        <li> <a href="/TP2/cards.html"><i class="fa-solid fa-bed"></i> Habitaciones</a></li>
+                        <li> <a href="/TP2/galery.html"><i class="fa-solid fa-image"></i> Instalaciones</a></li>
+                        <li> <a href="/TP2/contact.html"> <i class="fa-solid fa-envelope"></i> Contacto</a></li>
 
                     </ul>
                 </nav>
@@ -65,11 +65,48 @@
                         <input class="checkbox" type="checkbox" name="checkbox">
                     </div>
                     <div class="button-container">
-                        <button class button-submit="submit">Enviar</button>
+                        <button class ="button-submit" type="submit">Enviar</button>
                         <button class="button-reset" type="reset">Borrar</button>
                     </div>
                 </form>
             </div> 
+        </section>
+        <section id="reviews">
+            <div class="h2-container">
+                <h2>¿Ya te alojaste en La Serena? ¡Dejá tu reseña!</h2>
+            </div>
+            <div id="cards-container">
+                <!-- Aca se van a crear las nuevas cards    -->
+               </div>
+            <div class="form">
+                <form id="card-form">
+                    <label for="card-title">Título:</label>
+                    <input type="text" name="card-title" id ="card-title" required>
+                    <br/>
+                    <label for="card-description">Reseña:</label>
+                    <textarea name="card-description" id="card-description" required></textarea>
+                    <br/>
+                    <label for="card-image">Imagen (URL):</label>
+                    <input type="url" name="card-image" id ="card-image" placeholder="https://picsum.photos/300/200" >
+                    <br/>
+                    <div class="h3-container"> 
+                        <h3>Personalizá tu reseña:</h3>
+                    </div>
+                    <div class="card-bgcolor">
+                        <label for="card-bg-color">Color de fondo:</label>
+                        <input type="color" name= "card-bg-color" id="card-bg-color" value="#ffffff">
+                    </div>
+                    <div class="card-bordercolor">
+                        <label for="card-border-color">Color de borde:</label>
+                        <input type="color" name= "card-border-color" id="card-border-color" value="#a52a2a">
+                    </div>
+                    <div class="button-container">
+                        <button class ="button-submit" type="submit">Agregar</button>
+                        <button class="button-reset" type="reset">Borrar</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
     </main>
 
@@ -83,6 +120,7 @@
             <p class="icon"><i class="fa-brands fa-instagram"></i></p>
         </div>
     </footer>
-    
+    <script src="./js/contact.js"></script> 
 </body>
 </html>
+
