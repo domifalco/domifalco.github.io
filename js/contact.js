@@ -33,6 +33,14 @@ document.getElementById('card-form').addEventListener('submit', function (event)
  
  cardContainer.append(newCard)
 
+    newCard.addEventListener('mouseenter', () => {
+        newCard.style.transform = "scale(1.05)"
+    }), 
+    newCard.addEventListener('mouseleave', () =>{
+        newCard.style.transform = ""
+    })
+
  document.getElementById('card-form').reset()
 
 })
+

@@ -61,16 +61,13 @@ button:hover{
     padding: 10px;
     width: 300px;
     height: auto;
-    transition: transform 0.2s ;
+    transition: all 0.2s ease;
+   
 }
-.card-review:hover{
-    transform: scale(1.05);
-}
-
 .card-review img{
     width: 100%;
     height:200px;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 .card-review-content{
     margin-top: 10px;
